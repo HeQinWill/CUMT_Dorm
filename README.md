@@ -1,4 +1,5 @@
 # CUMT_Dorm
+视频介绍：https://www.bilibili.com/video/BV1e64y1h7an
 ## 从网页登录获取 Token 信息
 1. 登录 http://gongyu.cumt.edu.cn/m/index.jsp
 2. 右键-检查（ Chrome 内核类型浏览器可以按 `F12` ）
@@ -88,4 +89,5 @@ for i in range(66666666666):
 ![成功示例](src/success.jpg)
 
 ## 为啥写得这么乱？
-懒！希望有人用 requestes 把 post 请求的内容重写，使其整个变得一体化
+懒呗，能用就行啦！
+- [ ] 用 requestes 把 post 请求的内容重写，这样各计算机平台均可使用
