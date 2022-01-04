@@ -1,9 +1,9 @@
-name: Python Package using Conda
+name: Python Package
 
 on:
   push:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/30 * * * *'
 
 jobs:
   build-linux:
@@ -12,14 +12,6 @@ jobs:
       max-parallel: 4
     steps:
     - uses: actions/checkout@v2
-#     - name: Set up Python 3.8
-#       uses: actions/setup-python@v2
-#       with:
-#         python-version: 3.8
-#     - name: Add conda to system path
-#       run: |
-#         # $CONDA is an environment variable pointing to the root of the miniconda directory
-#         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
         pip install requests pendulum
