@@ -88,6 +88,5 @@ for i in range(66666666666):
 也就是再次请求 `fangjian.sh` 获取 JSON 文件，并查看最后的位置
 ![成功示例](src/success.jpg)
 
-## 为啥写得这么乱？
-懒呗，能用就行啦！
-- [ ] 用 requestes 把 post 请求的内容重写，这样各计算机平台均可使用
+##  将 post 请求转为其他语言支持的请求
+如需实现各计算机平台通用，可利用 https://curlconverter.com 提供的工具将 post 请求的内容重写
