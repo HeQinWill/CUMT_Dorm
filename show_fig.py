@@ -14,6 +14,9 @@ for f in file_list[:]:
     d_list.append(f)
     df_all = df_all.append(df)
 
+# 如需备份数据
+# df_all.to_csv(f'dorm_elec/until_{df_all.iloc[-1, 3]}.csv', header=None, index=None)
+
 # 设置时间列索引
 df_all[3] = pd.to_datetime(df_all[3])
 df_all.set_index(df_all[3], inplace=True)
