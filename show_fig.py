@@ -8,11 +8,10 @@ file_list.sort()
 
 # 拼接所有的表
 d_list = []
-df_all = pd.DataFrame()
 for f in file_list[:]:
     df = pd.read_csv(f, header=None)
-    d_list.append(f)
-    df_all = df_all.append(df)
+    d_list.append(df)
+df_all = pd.concat(d_list)
 
 # 如需备份数据
 # df_all.to_csv(f'dorm_elec/until_{df_all.iloc[-1, 3]}.csv', header=None, index=None)
