@@ -3,7 +3,7 @@ name: Python Package
 on:
 #   push:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '31 0 1 * *'
 
 jobs:
   build-linux:
